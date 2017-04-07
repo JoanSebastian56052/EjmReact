@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchBar from './SearchBar.js';
 import ProductTable from './ProductTable.js';
+import AddRow from './AddRow.js';
 
 export default class FilterableProdductTable extends Component {
 	constructor(props) {
@@ -34,6 +35,7 @@ export default class FilterableProdductTable extends Component {
 					<ProductTable products={this.props.store}
 					filterText={this.state.filterText}
 					inStockOnly={this.state.inStockOnly}/>
+					<AddRow />
 				</div>
 			);
 	}

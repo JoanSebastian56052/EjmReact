@@ -21,13 +21,13 @@ export default class SearchBar extends Component {
 					placeholder="Search... "
 					value={this.props.filterText}
 					onChange={this.handleFilterTextInputChange}/>
-					<p>
+					<h5>
 						<input type="checkbox"
 						checked={this.props.inStockOnly}
 						onChange={this.handleInStockInputChange}/>
 						{' '}
-						Unico producto ....
-					</p>
+						Ver solo productos existentes ....
+					</h5>
 				</form>
 			);
 	}

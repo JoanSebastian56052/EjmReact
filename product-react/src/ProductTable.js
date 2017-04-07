@@ -6,7 +6,6 @@ export default class ProductTable extends Component {
 	render() {
 		let rows = []
 		let last_category = null;
-		console.log(this.props.inStockOnly)
 		if(this.props.products != null) {
 			this.props.products.forEach((product) =>{
 				if(product.name.indexOf(this.props.filterText) === -1 || (!product.stocked && this.props.inStockOnly)) {
@@ -34,6 +33,5 @@ export default class ProductTable extends Component {
 					</tbody>
 				</table>
 			);
-				
 	}
 }
